@@ -1,0 +1,122 @@
+#startBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+#startBox > h1 {
+  font-size: 50px;
+}
+#startBox > p {
+  margin: 50px;
+}
+#startBox > button {
+  width: 155px;
+  height: 40px;
+  border: none;
+  background-color: #16d183;
+  font-size: 20px;
+  line-height: 43px;
+}
+
+#gameArea {
+  width: 768px;
+  height: 100vh;
+  margin: 0 auto;
+}
+#myImage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 768px;
+  height: 100vh;
+  transform: translateX(-50%);
+}
+#myImage1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  width: 768px;
+  height: 100vh;
+
+  transform: translateX(-50%);
+}
+#airplane {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  background-image: url("../img/airplane.png");
+  background-size: cover;
+  /* transition: all 0.3s; */
+}
+.missileArea {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 768px;
+}
+.missileArea > img {
+  display: block;
+  width: 40px;
+  height: auto;
+}
+#safeZone {
+  visibility: hidden;
+  width: 200px;
+}
+#counting {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 220px;
+  transform: translate(-50%, -50%);
+}
+#score {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  font-size: 30px;
+  transform: translateX(-50%);
+}
+.message {
+  font-size: 140px;
+  font-weight: bold;
+  color: rgb(83, 18, 18);
+  text-align: center;
+}
+#endGame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  display: none;
+}
+
+.playerScore {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 30px;
+}
+
+#endGame > button {
+  width: 200px;
+  height: 50px;
+  margin-top: 45px;
+  border: none;
+  background-color: #1d741d;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}

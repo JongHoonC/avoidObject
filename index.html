@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>장애물 피하기</title>
+  </head>
+  <body>
+    <div id="startBox">
+      <h1>장애물 피하기</h1>
+      <p>좌, 우 방향키로 날아오는 장애물을 피하자</p>
+      <button onclick="startGame()">시작하기</button>
+    </div>
+    <div id="gameArea">
+      <div class="missileArea"></div>
+      <img
+        src="img/background.jpg"
+        id="myImage"
+        style="-webkit-user-drag: none"
+      />
+      <img
+        src="img/background.jpg"
+        id="myImage1"
+        style="-webkit-user-drag: none"
+      />
+      <div id="airplane"></div>
+      <div id="counting"></div>
+      <div id="score"></div>
+    </div>
+    <div id="endGame">
+      <h1 class="message">WASTED</h1>
+      <h1 class="playerScore">획득 점수 :</h1>
+      <button onclick="restart()">재시도</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
